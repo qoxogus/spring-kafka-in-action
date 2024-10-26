@@ -1,0 +1,11 @@
+#producer
+spring.kafka:
+  bootstrap-servers: 127.0.0.1:9092
+
+#consumer
+spring.kafka.consumer:
+  bootstrap-servers: 127.0.0.1:9092
+  group-id: waltergroup
+  enable-auto-commit: true
+  auto-commit-interval: 1000ms #1000ms?? ??, ??? 500ms
+  auto-offset-reset: latest
